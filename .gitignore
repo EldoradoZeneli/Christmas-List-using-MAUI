@@ -49,11 +49,11 @@ bld/
 # Visual Studio 2017 auto generated files
 Generated\ Files/
 
-# Visual Studio 2022+ IntelliSense cache files
+# Visual Studio 2022 and later IntelliSense cache files
 *.vsidx
 *.vsidx.lock
 
-# Visual Studio 2022+ user-specific editor settings
+# Visual Studio 2022 and later user-specific editor settings
 .editorconfig.user
 
 # MSTest test Results
@@ -398,7 +398,7 @@ MSBuild_Logs/
 # Visual Studio History (VSHistory) files
 .vshistory/
 
-# Visual Studio 2022+ telemetry and diagnostics
+# Visual Studio 2022 and later telemetry and diagnostics
 .diagsession
 *.rptproj.rsuser.lock
 
