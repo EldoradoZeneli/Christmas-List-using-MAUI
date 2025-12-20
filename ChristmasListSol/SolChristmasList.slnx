@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="ChristmasListBL/ChristmasListBL.csproj" />
+  <Project Path="ChristmasListDL/ChristmasListDL.csproj" />
+  <Project Path="ChristmasListUI_MAUI/ChristmasListUI_MAUI.csproj" Id="67e77957-48bb-4e96-8ce7-2b29a37ff95f" />
+  <Project Path="ChristmasListUtils/ChristmasListUtils.csproj" />
+</Solution>
