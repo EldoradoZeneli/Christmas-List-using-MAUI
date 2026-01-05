@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChristmasListUI_MAUI.GiftItemDetailPage"
+             Title="NewPage1">
+    <ScrollView Padding="16">
+        <VerticalStackLayout Spacing="16">
+
+            <Label Text="Image URL" FontAttributes="Bold"/>
+            <Image Source="{Binding ImageUrlField}"
+                    Aspect="AspectFit"
+                    WidthRequest="150"
+                    HeightRequest="150"/>
+
+            <Entry Text="{Binding ImageUrlField, Mode=TwoWay}"/>
+
+            <Label Text="Title" FontAttributes="Bold"/>
+            <Entry Text="{Binding TitleField, Mode=TwoWay}"/>
+
+            <Label Text="Website URL" FontAttributes="Bold"/>
+            <Entry Text="{Binding PriceField, Mode=TwoWay}"/>
+
+
+            <Label Text="Description" FontAttributes="Bold"/>
+            <Editor Text="{Binding DescriptionField, Mode=TwoWay}"
+                 HeightRequest="100"/>
+
+            <Button Text="Save" 
+                 BackgroundColor="Green"
+                 TextColor="White"
+                 Command="{Binding SaveCommand, Mode=TwoWay}" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

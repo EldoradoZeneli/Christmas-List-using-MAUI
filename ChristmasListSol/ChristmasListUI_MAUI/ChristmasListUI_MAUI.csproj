@@ -47,7 +47,6 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
 		
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -60,6 +59,38 @@
 		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.20" />
 		<PackageReference Include="Microsoft.Maui.Essentials" Version="10.0.20" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\ChristmasListBL\ChristmasListBL.csproj" />
+	  <ProjectReference Include="..\ChristmasListUtils\ChristmasListUtils.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="GiftItemDetailPage.xaml.cs">
+	    <DependentUpon>GiftItemDetailPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="WishItemDetailPage.xaml.cs">
+	    <DependentUpon>WishItemDetailPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="WishlistPage.xaml.cs">
+	    <DependentUpon>WishlistPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="GiftListPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="GiftItemDetailPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="WishItemDetailPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="WishlistPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
